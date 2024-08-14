@@ -25,7 +25,6 @@ class kMeansClustering:
       return np.sqrt(np.sum((centroids-datapoint)**2,axis=1))
 
     def fit(self,x,max_iterations=200):
-      
       #initialize the 'self.centroids' randomly within the range of the data points (x)
       self.centroids = np.random.uniform(np.amin(x,axis=0),np.amax(x,axis=0),size=(self.k,x.shape[1]))
 

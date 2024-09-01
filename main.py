@@ -6,7 +6,6 @@ class kMeansClustering:
         self.k=k
         self.centroids=None
         
-
     @staticmethod
     def euclidean_distance(datapoint,centroids):
       """

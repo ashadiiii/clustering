@@ -14,6 +14,7 @@ class kMeansClustering:
       - datapoint: This is a single data point(typically represented as an array or list) for which we want to calculate distances to each centroid. 
       - centroids: An array if cebtroids. each centroid is represented as a point in the same dimentional space as 'datapoint'.
 
+
       function implemenation:
       - Squared Differences: (centroids - datapoint) ** 2 calculates the squared differences between each centroid and the datapoint. This is a vectorized operation in NumPy, meaning it efficiently computes the squared differences element-wise.
       - Summation: np.sum(..., axis=1) sums up the squared differences along axis 1, which corresponds to summing across the dimensions of the datapoint.

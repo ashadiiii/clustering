@@ -29,6 +29,7 @@ class kMeansClustering:
       self.centroids = np.random.uniform(np.amin(x,axis=0),np.amax(x,axis=0),size=(self.k,x.shape[1]))
 
       for _ in range(max_iterations):
+          
         y= [] #to store cluster assignments for each datapoint
         for data_point in x:
             distances= kMeansClustering.euclidean_distance(data_point,self.centroids) #computes distances to all centroids using 'euclidean_distance' method.

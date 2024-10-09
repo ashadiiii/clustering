@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class kMeansClustering:
-    
     def __init__(self,k=3):
         self.k=k
         self.centroids=None
